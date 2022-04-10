@@ -27,7 +27,6 @@ public class StreamController {
 
     @PostMapping
     public ResponseEntity<Stream> Create(@RequestBody Stream newStream){
-        System.out.println(newStream);
         return new ResponseEntity<>(streamRepository.save(newStream), HttpStatus.CREATED);
     }
 
