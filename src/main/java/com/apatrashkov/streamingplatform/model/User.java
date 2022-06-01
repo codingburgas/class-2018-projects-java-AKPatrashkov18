@@ -3,7 +3,7 @@ package com.apatrashkov.streamingplatform.model;
 import javax.persistence.*;
 
 @Entity
-@Table
+@Table(name = "user_tbl")
 public class User {
     @Id
     @GeneratedValue
